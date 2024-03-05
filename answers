@@ -1,0 +1,54 @@
+# FizzBuzz
+#Write a program that prints the numbers from 1 to 100. For multiples of 3, print "Fizz"; for multiples of 5, print "Buzz"; and for numbers that are multiples of both 3 and 5, print "FizzBuzz".
+
+for i in range(1, 101):
+    if i % 3 == 0 and i % 5 == 0:
+        print("FizzBuzz")
+    elif i % 3 == 0:
+        print("Fizz")
+    elif i % 5 == 0:
+        print("Buzz")
+    else:
+        print(i)
+
+# Fibonacci Sequence
+# Write a program to generate the Fibonacci sequence up to 100.
+def generate_fibonacci_sequence(limit):
+    sequence = [0, 1]
+    while sequence[-1] < limit:
+        next_number = sequence[-1] + sequence[-2]
+        if next_number > limit:
+            break
+        sequence.append(next_number)
+    return sequence
+
+fib_sequence = generate_fibonacci_sequence(100)
+
+for num in fib_sequence:
+    print(num)
+
+# Power of Two
+# Write a program that takes an integer as input and returns True if the input is a power of two.
+# Examples:
+# 8 => returns True
+# 6 => returns False
+def is_power_of_two(num):
+    if num <= 0:
+        return False
+    while num > 1:
+        if num % 2 != 0:
+            return False
+        num = num // 2
+    return True
+#Test
+print(is_power_of_two(8))
+
+
+
+
+
+
+
+
+
+
