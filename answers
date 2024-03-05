@@ -43,6 +43,66 @@ def is_power_of_two(num):
 #Test
 print(is_power_of_two(8))
 
+#Question 4: Capitalize Words
+#Write a program that accepts a string as input, capitalizes the first letter of each word in the 
+#string, and then returns the result string.
+#Examples: 
+#"hi"=> returns "Hi"
+#"i love programming"=> returns "I Love Programming"
+
+def Capitalize_words(string):
+    words=string.split()
+
+    for word in words:
+        capitalize_word=word.capitalize()
+        capitalize_words.append(capitalize(word))
+        capitalized_string = ' '.join(capitalized_words)
+        return capitalized_string
+print(capitalized_words(hi) #output is Hi
+
+#Question 5: Reverse Integer
+#Write a program that takes an integer as input and returns an integer with reversed digit 
+#ordering.
+#Examples:
+#For input 500, the program should return 5.
+#For input -56, the program should return -65.
+#For input -90, the program should return -9.
+#For input 91, the program should return 19
+
+def Reverse_integer(num):
+    is_negative=false
+    if num<0:
+       is_negative=True
+       num=abs(num)
+    reversed_num=int(string(num)[::-1))
+    if is_negative:
+    reversed_num *-1
+    return reversed_num
+
+#Question 6: Count Vowels
+#Write a program that counts the number of vowels in a sentence.
+#eg " Hello World " => returns 2
+def Count_vowels(sentence)
+   vowels=set('aeiouAEIOU')
+   vowel_count=0
+   for char in sentence:
+       if char in vowels:
+        vowel count +=1
+     return vowel_count
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
