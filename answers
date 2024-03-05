@@ -1,4 +1,4 @@
-# FizzBuzz
+#Question 1: FizzBuzz
 #Write a program that prints the numbers from 1 to 100. For multiples of 3, print "Fizz"; for multiples of 5, print "Buzz"; and for numbers that are multiples of both 3 and 5, print "FizzBuzz".
 
 for i in range(1, 101):
@@ -11,7 +11,7 @@ for i in range(1, 101):
     else:
         print(i)
 
-# Fibonacci Sequence
+# Question 2: Fibonacci Sequence
 # Write a program to generate the Fibonacci sequence up to 100.
 def generate_fibonacci_sequence(limit):
     sequence = [0, 1]
@@ -27,7 +27,7 @@ fib_sequence = generate_fibonacci_sequence(100)
 for num in fib_sequence:
     print(num)
 
-# Power of Two
+# Question 3: Power of Two
 # Write a program that takes an integer as input and returns True if the input is a power of two.
 # Examples:
 # 8 => returns True
